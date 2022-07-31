@@ -1,0 +1,25 @@
+
+.swiper-buttons{
+	margin: 40px 0;
+
+	&-inner{
+		@include innerBase();
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.swiper-button {
+	cursor: pointer;
+	&.-prev{
+		& img{
+			transform: scale(-1, 1);
+		}
+	}
+}
+
+.swiper-current{
+	font-size: 1.4rem;
+	margin: 0 15px;
+}

@@ -1,0 +1,61 @@
+
+/* 表示非表示
+------------------------------ */
+.-pcOnly{
+	display: block;
+	@include mq(only-md){
+		display: none;
+	}
+}
+.-spOnly{
+	display: none;
+	@include mq(only-md){
+		display: block;
+	}
+}
+
+
+/* fontサイズ
+------------------------------ */
+.-fontMin{
+	font-size: 1.2rem !important;
+}
+
+/* 文字色変更
+------------------------------ */
+.-colorRed{color: #cc0000 !important;}
+.-colorYellow{color: #9f8930 !important;}
+.-colorGray{color: #b0b0b0 !important;}
+
+
+/* 背景色変更
+------------------------------ */
+.-bkRed{background-color: #cc0000 !important;}
+.-bkGray{background-color: #b0b0b0 !important;}
+
+
+/* width100%
+------------------------------ */
+.-width100{
+	max-width: none !important;
+	width: 100%;
+}
+
+
+/* 装飾テキスト
+------------------------------ */
+.-bold{font-weight: bold !important;}
+.-warning{
+	position: relative;
+	padding-left: 1.2em;
+	&::before{
+		content: "※";
+		position: absolute;
+		top: .1em;
+		left: 0;
+		font-size: .9em;
+	}
+}
+.-uLine{
+	text-decoration: underline;
+}

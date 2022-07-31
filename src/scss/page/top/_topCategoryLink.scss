@@ -1,0 +1,8 @@
+.topCategoryLink{
+  opacity: 1;
+  display: block;
+  transition: .2s;
+  &:hover{
+    opacity: .6;
+  }
+}

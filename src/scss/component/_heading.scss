@@ -1,0 +1,28 @@
+.h2{
+  font-size: 3rem;
+  line-height: 1.3em;
+  border-left: 5px solid #ffffff;
+  padding-left: 15px;
+  margin-bottom: 20px;
+
+  &__source{
+    font-size: 2rem;
+    border-left: 0px;
+    padding-left: 0px;
+    text-align: center;
+  }
+
+  @include mq(only-md){
+    font-size: 2rem;
+    border-left: 4px solid #ffffff;
+  }
+}
+
+.h3{
+  font-size: 1.8rem;
+  line-height: 1.3em;
+  background-color: rgba(255,255,255, .2);
+  color: #ffffff;
+  padding: 6px 15px;
+  margin-bottom: 10px;
+}

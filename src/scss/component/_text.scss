@@ -1,0 +1,9 @@
+.text{
+  font-size: 1.6rem;
+  line-height: 1.5em;
+  color: $MainWhite;
+  word-break: break-all;
+  @include mq(only-md){
+    font-size: 1.4rem;
+  }
+}

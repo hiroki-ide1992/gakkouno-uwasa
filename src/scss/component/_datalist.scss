@@ -1,0 +1,36 @@
+.datalist01{
+  & + &{
+    margin-top: 40px;
+  }
+  &__dt{
+    font-size: 2rem;
+    line-height: 1.3em;
+    background-color: rgba(255,91,91, .1);
+    color: #ffffff;
+    padding: 10px;
+    display: block;
+    margin-bottom: 15px;
+    @include mq(only-md){
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+  }
+  &__dd{
+    font-size: 1.6rem;
+    line-height: 1.3em;
+    padding: 0px 10px;
+
+    &.-arrow{
+      position: relative;
+      padding-left: calc( 10px + 1.3em);
+      &::before{
+        content: "→";
+        position: absolute;
+        left: 10px;
+      }
+    }
+    @include mq(only-md){
+      font-size: 1.4rem;
+    }
+  }
+}

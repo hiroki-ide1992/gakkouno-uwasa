@@ -1,0 +1,29 @@
+@include mq(only-lg){
+
+  @for $i from 10 through 40 {
+    .-font#{$i*1}-lg{
+      font-size: #{$i*1}px !important;
+    }
+  }
+
+}
+
+@include mq(only-md){
+
+  @for $i from 10 through 40 {
+    .-font#{$i*1}-md{
+      font-size: #{$i*1}px !important;
+    }
+  }
+
+}
+
+@include mq(only-sm){
+
+  @for $i from 10 through 40 {
+    .-font#{$i*1}-sm{
+      font-size: #{$i*1}px !important;
+    }
+  }
+
+}

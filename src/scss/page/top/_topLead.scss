@@ -1,0 +1,39 @@
+.topLead{
+  margin-top: 80px;
+
+@include mq(only-md){
+  margin-top: 10px;
+  padding: 0 10px;
+}
+  
+  &__title{
+    margin-bottom: 20px;
+
+    @include mq(only-md){
+      margin-bottom: 4%;
+      & img{
+        width: 40%;
+      }
+    }
+  }
+
+  &__toPage{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #ffffff;
+    font-size: 1.6rem;
+
+    @include mq(only-md){
+      font-size: 1.2rem;
+
+      & .iconToNext{
+        width: 15px;
+      }
+    }
+
+    & .iconToNext{
+      margin-left: .5em;
+    }
+  }
+}

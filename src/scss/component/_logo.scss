@@ -1,0 +1,27 @@
+
+@keyframes luminous {
+  0%{
+    opacity: .3;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: .3;
+  }
+}
+
+.logo1{
+  position: relative;
+
+  &__front{
+    position: absolute;
+  }
+  &__back{
+    position: absolute;
+    animation-name: luminous;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+  }
+}

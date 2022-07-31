@@ -1,0 +1,42 @@
+@include mq(only-lg){
+  @for $i from 1 through 12 {
+    .col#{$i}-lg{ width: #{$i / 0.12}#{'%'};}
+  }
+}
+@include mq(only-md){
+  @for $i from 1 through 12 {
+    .col#{$i}-md{ width: #{$i / 0.12}#{'%'};}
+  }
+}
+
+.row{
+  display: flex;
+
+  & >* {
+    padding: 0 10px;
+  }
+
+  & + &{
+    margin-top: 15px;
+  }
+
+  &--center{
+    justify-content: center;
+  }
+  &--right{
+    justify-content: flex-end;
+  }
+  &--alCenter{
+    align-items: center;
+  }
+
+  @include mq(only-md){
+
+    &--spColumn{
+      flex-direction: column;
+    }
+    &--spColumnReverse{
+      flex-direction: column-reverse;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.topBridge{
+  display: flex;
+  justify-content: center;
+  @include mq(only-md){
+    padding: 40px 0 30px 0;
+  }
+
+  &__right{
+    transform: translateX(-80px);
+    @include mq(only-md){
+      width: 40%;
+    }
+  }
+  &__left{
+    @include mq(only-md){
+      width: 26%;
+    }
+  }
+}

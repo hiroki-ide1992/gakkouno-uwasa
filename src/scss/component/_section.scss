@@ -1,0 +1,14 @@
+.section{
+  width: 100%;
+
+  &:last-of-type{
+    margin-bottom: 80px;
+    @include mq(only-md){
+      margin-bottom: 40px;
+    }
+  }
+
+  &__inner{
+    @include innerBase();
+  }
+}

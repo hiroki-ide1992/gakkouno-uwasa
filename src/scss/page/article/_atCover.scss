@@ -1,0 +1,29 @@
+.atCover{
+  background-size: 1060px;
+  background-position: center top;
+  background-repeat: repeat-x;
+
+  min-height: calc(100vh - 155px);
+
+  &--toshi{
+    background-image: url('../img/toshi/common/top_cover_hero.jpg');
+  }
+  &--uma{
+    background-image: url('../img/uma/common/uma_cover_hero.jpg');
+    background-repeat: no-repeat;
+    background-size: 1300px;
+  }
+  &--spot{
+    background-image: url('../img/spot/common/spot_cover_hero.jpg');
+    background-repeat: no-repeat;
+    background-size: 1200px;
+  }
+
+  & > .atHero{
+    height: 350px;
+    @include mq(only-md){
+      height: 180px;
+    }
+  }
+
+}

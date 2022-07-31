@@ -1,0 +1,11 @@
+.borderBox{
+  border-top: 1px double rgba(255,255,255, .4);
+  border-bottom: 1px solid rgba(255,255,255, .4);
+  background-color: rgba(0,0,0,.5);
+  padding: 30px 20px;
+  width: 100%;
+
+  @include mq(only-md){
+    padding: 20px 10px;
+  }
+}

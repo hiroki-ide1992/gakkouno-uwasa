@@ -1,0 +1,29 @@
+.atHero{
+  &--toshi{
+    text-shadow: 3px 3px 4px rgba(53,53,53,0.3), 0px 2px 3px rgba(255,66,66,0.9);
+  }
+  &--uma{
+    text-shadow: 3px 3px 4px rgba(53,53,53,0.3), 0px 2px 3px rgba(66,171,255,0.9);
+  }
+  &--spot{
+    text-shadow: 3px 3px 4px rgba(53,53,53,0.3), 0px 2px 3px rgba(255,176,66,0.9);
+  }
+  
+  &__inner{
+    @include innerBase();
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  &__h1{
+    text-align: center;
+    font-size: 6rem;
+    font-weight: bold;
+    line-height: 1.3em;
+    @include mq(only-md){
+      font-size: 3rem;
+    }
+  }
+}
